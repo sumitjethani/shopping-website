@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Tortugo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Tortugo
+            <img src="tortugo_logo.jpg" alt="Tortugo Logo">
+        </div>
+        <div class="hamburger" aria-label="Toggle navigation" role="button">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#men">Men</a></li>
+                <li><a href="index.html#women">Women</a></li>
+                <li><a href="index.html#sale">Sale</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li class="cart"><a href="index.html#cart">🛒 Cart</a></li>
+                <li class="auth"><a href="signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="auth-section">
+        <div class="auth-form">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <div class="input-group">
+                    <input type="text" id="full-name" placeholder="Full Name" required aria-describedby="signup-message">
+                </div>
+                <div class="input-group">
+                    <input type="email" id="signup-email" placeholder="Email" required aria-describedby="signup-message">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="signup-password" placeholder="Password" required aria-describedby="signup-message">
+                    <span class="toggle-password" data-target="signup-password" aria-label="Toggle password visibility">👁️</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" required aria-describedby="signup-message">
+                    <span class="toggle-password" data-target="confirm-password" aria-label="Toggle password visibility">👁️</span>
+                </div>
+                <button type="submit" aria-label="Sign Up">
+                    <span class="button-text">Sign Up</span>
+                    <span class="spinner" style="display: none;">⏳</span>
+                </button>
+            </form>
+            <div id="signup-message" class="message" role="alert"></div>
+            <p>Already have an account? <a href="signin.html">Sign In</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Tortugo. All Rights Reserved.</p>
+            <p>Contact Us:</p>
+            <ul>
+                <li><a href="https://instagram.com/sumit.jethani" target="_blank">Instagram</a></li>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="/cdn-cgi/l/email-protection#bac9cfd7d3ced0dfced2dbd4d38b8889faddd7dbd3d694d9d5d7">Gmail</a></li>
+                <li>Contact Number: +923362499988</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
