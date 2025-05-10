@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tortugo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Tortugo
+            <img src="tortugo_logo.jpg" alt="Tortugo Logo">
+        </div>
+        <div class="hamburger" aria-label="Toggle navigation" role="button">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#men">Men</a></li>
+                <li><a href="index.html#women">Women</a></li>
+                <li><a href="index.html#sale">Sale</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart"><a href="index.html#cart">🛒 Cart</a></li>
+                <li class="auth"><a href="signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="auth-section">
+        <div class="auth-form">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="input-group">
+                    <input type="text" id="contact-name" placeholder="Full Name" required aria-describedby="contact-message">
+                </div>
+                <div class="input-group">
+                    <input type="email" id="contact-email" placeholder="Email" required aria-describedby="contact-message">
+                </div>
+                <div class="input-group">
+                    <textarea id="contact-message-text" placeholder="Your Message" required aria-describedby="contact-message" rows="5"></textarea>
+                </div>
+                <button type="submit" aria-label="Send Message">
+                    <span class="button-text">Send Message</span>
+                    <span class="spinner" style="display: none;">⏳</span>
+                </button>
+            </form>
+            <div id="contact-message" class="message" role="alert"></div>
+            <p>Need to sign in? <a href="signin.html">Sign In</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Tortugo. All Rights Reserved.</p>
+            <p>Contact Us:</p>
+            <ul>
+                <li><a href="https://instagram.com/sumit.jethani" target="_blank">Instagram</a></li>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="/cdn-cgi/l/email-protection#bac9cfd7d3ced0dfced2dbd4d38b8889faddd7dbd3d694d9d5d7">Gmail</a></li>
+                <li>Contact Number: +923362499988</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

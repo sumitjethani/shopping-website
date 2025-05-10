@@ -107,7 +107,7 @@ nav ul li:hover {
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
-    transition: 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 
 .shop-now:hover {
@@ -138,7 +138,7 @@ nav ul li:hover {
 .category img {
     width: 100%;
     max-width: 100%;
-    object-fit: contain; /* Show the full image without cropping */
+    object-fit: contain;
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -211,7 +211,7 @@ footer {
     color: white;
 }
 
-/* Sign In, Sign Up, Forgot Password Pages */
+/* Sign In, Sign Up, Forgot Password, Reset Password, Contact Pages */
 .auth-section {
     display: flex;
     justify-content: center;
@@ -240,15 +240,23 @@ footer {
     margin-bottom: 15px;
 }
 
-.auth-form input {
+.auth-form input,
+.auth-form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    resize: vertical; /* Allow vertical resizing for textarea */
 }
 
-.auth-form input.invalid {
+.auth-form textarea {
+    min-height: 100px;
+    font-family: Arial, sans-serif; /* Match input font */
+}
+
+.auth-form input.invalid,
+.auth-form textarea.invalid {
     border-color: red;
 }
 
@@ -398,6 +406,11 @@ footer {
         width: 100%;
         max-width: 100%;
     }
+
+    /* Form Adjustments */
+    .auth-form textarea {
+        min-height: 80px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -432,5 +445,9 @@ footer {
     .category img {
         width: 100%;
         max-width: 100%;
+    }
+
+    .auth-form textarea {
+        min-height: 60px;
     }
 }
