@@ -75,6 +75,68 @@ nav ul li:hover {
     font-size: 2rem;
 }
 
+/* Dropdown Cart */
+.cart-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+}
+
+.cart-dropdown .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-dropdown .cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.cart-dropdown .cart-item h3 {
+    font-size: 14px;
+    margin: 0;
+    flex: 1;
+}
+
+.cart-dropdown .cart-item p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.cart-dropdown .cart-item button {
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cart-dropdown .checkout {
+    text-align: center;
+    padding: 10px;
+}
+
+.cart-dropdown .checkout button {
+    background: green;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -161,6 +223,30 @@ nav ul li:hover {
 
 .category-link:hover .category {
     transform: scale(1.05);
+}
+
+/* Product Section */
+.product {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 /* About Us Section */
